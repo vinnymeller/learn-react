@@ -1,5 +1,5 @@
 {
-  description = "React tic tac toe";
+  description = "React";
 
   outputs =
     { self, nixpkgs }:
@@ -15,7 +15,7 @@
 
       devShells = forAllSystems (pkgs: {
         default = pkgs.mkShell {
-          name = "react-tic-tac-toe";
+          name = "react";
           packages = with pkgs; [ nodejs ];
         };
       });
